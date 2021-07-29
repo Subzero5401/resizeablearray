@@ -191,7 +191,8 @@ void dmanall::scaledown()
 			if (choice == (a-1))
 			{
 
-				break;
+				
+
 
 
 			}
@@ -238,7 +239,7 @@ void dmanall::scaledown()
 			for (int d = 0; d < a; d++)
 			{
 				*(fir + d) = *(temp + d);
-				std::cout << "fir array after downscale \n ";
+				std::cout << "fir array after downscale \n " << *(fir + d) << std::endl;
 
 
 
@@ -283,7 +284,7 @@ void dmanall::scaledown()
 		}
 
 
-
+		con = 0;
 
 
 	}
