@@ -188,7 +188,7 @@ void dmanall::scaledown()
 		std::cin >> yesorno;
 		if (yesorno == 1)
 		{
-			if (choice == a)
+			if (choice == (a-1))
 			{
 
 				break;
@@ -230,8 +230,23 @@ void dmanall::scaledown()
 
 
 			}
+			delete[] fir;
+			fir = nullptr;
+			a--;
+			fir = new int[a];
+			
+			for (int d = 0; d < a; d++)
+			{
+				*(fir + d) = *(temp + d);
+				std::cout << "fir array after downscale \n ";
 
 
+
+
+
+			}
+			delete[] temp;
+			temp = nullptr;
 
 
 
